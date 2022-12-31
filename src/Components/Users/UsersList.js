@@ -13,7 +13,7 @@ const UserList = props => {
         <Card className={UsersListStyles.users}>
             <ul className={UsersListStyles.users}>
                 {
-                    users.map(user => (<User onDeleteUser={deleteUserHandler} user={user} />))
+                    users.map(user => (<User onDeleteUser={deleteUserHandler} user={user} key={user.id} />))
                 }
             </ul>
         </Card>

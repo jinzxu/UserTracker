@@ -4,6 +4,6 @@ const User = (props) => {
     const deleteUserHandler = () => {
         props.onDeleteUser(user);
     }
-    return (<li key={user.id} onClick={deleteUserHandler} > {user.username} {user.age} years old</li >)
+    return (<li onClick={deleteUserHandler} > {user.username} {user.age} years old</li >)
 }
 export default User;
